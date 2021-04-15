@@ -1,0 +1,102 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #7aaef3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.card {
+  background: #fce4b9;
+  width: 700px;
+  height: 400px;
+  position: relative;
+}
+.left {
+  width: 350px;
+  height: 400px;
+  margin: 0px auto;
+  background: snow;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.right {
+  width: 350px;
+  height: 400px;
+  margin: 0px auto;
+  background: snow;
+  position: absolute;
+  top: 0px;
+  left: 350px;
+}
+#txt {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  top: 150px;
+  left: 20px;
+  font-family: "Yellowtail", cursive;
+  font-size: 20px;
+}
+
+h1 {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  font-family: "Yellowtail", cursive;
+  font-size: 26px;
+}
+
+.right::before {
+  content: "";
+  width: 50px;
+  height: 60px;
+  border: 2px solid black;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+.right::after {
+  content: "";
+  width: 250px;
+  height: 150px;
+  position: absolute;
+  top: 150px;
+  left: 25px;
+  background-image: repeating-linear-gradient(
+    snow,
+    snow 48px,
+    black 48px,
+    black 50px
+  );
+}
+#name {
+  position: absolute;
+  top: 150px;
+  left: 35px;
+  z-index: +1;
+  font-family: "Yellowtail", cursive;
+  font-size: 20px;
+}
+#street {
+  position: absolute;
+  top: 200px;
+  left: 35px;
+  z-index: +1;
+  font-family: "Yellowtail", cursive;
+  font-size: 20px;
+}
+#town {
+  position: absolute;
+  top: 250px;
+  left: 35px;
+  z-index: +1;
+  font-family: "Yellowtail", cursive;
+  font-size: 20px;
+}
